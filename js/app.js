@@ -15,6 +15,9 @@ const showMovies = (data) =>
         const imagePath = element.poster_path === null ? "img/image-missing.png" : IMGPATH + element.poster_path;
         const box = document.createElement("div")
             box.classList.add("box")
+            box.classList.add("col-md-3")
+            box.classList.add("col-sm-6")
+            box.classList.add("col-12")
             box.innerHTML = `
                 <img src="${imagePath}" alt=""/>
                 <div class="overlay">
